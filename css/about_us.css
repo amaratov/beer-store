@@ -1,0 +1,135 @@
+/*Main*/
+#title{
+    background-image: url("media/about_us/background.jpg");
+    background-size: cover;
+    height: 28em;
+    background-position: center;
+}
+#aboutTitle{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: perspective(1px) translateY(-50%);
+    background-color: #00000094;
+    color: white;
+    font-size: 4em;
+}
+#title small{
+    display: block;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: perspective(1px) translateY(-50%);
+    background-color: #000000b3;
+    color: white;
+    font-size: 1.5em;
+}
+
+/*Accordion*/
+#navAccord{
+    padding-left: 20px;
+    margin-top: 2%;
+    width: 20%;
+    float: left;
+}
+#navAccord button{
+    color: black;
+    text-decoration: underline;
+}
+#navAccord button:hover, .card-body a:hover{
+    color: orange;
+    background-color: black;
+    text-decoration: none;
+}
+#navAccord ul{
+    list-style: none;
+    padding: 0;
+}
+#navAccord li{
+    padding-left: 1.3em;
+}
+#navAccord li::before{
+    content: "\f105";
+    font-family: FontAwesome, serif;
+    display:inline-block;
+    margin-left: -1.3em;
+    width: 1.3em;
+}
+
+#navAccord a {
+    color:black;
+}
+/*content*/
+#content{
+    position: relative;
+    top: 2%;
+    margin-left: 20%;
+}
+
+.card-body a{
+    color: black;
+    text-decoration: underline;
+    font-size: 14px;
+}
+#textContent img{
+    width: 500px;
+    margin-left: 20%;
+}
+
+#news{
+    width: 50%;
+}
+#news hr{
+    width: 100%;
+}
+#contentMain a:hover{
+    color: orange;
+    background-color: black;
+    text-decoration: none;
+}
+#contentMain{
+    padding-left: 20%;
+}
+#contentMain a{
+    color: black;
+    text-decoration: underline;
+}
+#textContent{
+    border-bottom: 40px groove;
+    margin-bottom: 20px;
+}
+
+/*Media query*/
+@media only screen and (max-width: 1500px) and (min-width: 800px){
+    #content{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 800px){
+    #navAccord{
+        width: 40%;
+        margin: auto;
+        text-align: center;
+        padding: 30px;
+        float: none;
+    }
+    #content{
+        margin: auto;
+        width: 70%;
+    }
+    #contentMain{
+        padding: 20px;
+    }
+    #news{
+        width: 100%;
+        padding: 5%;
+        text-align: center;
+    }
+    #textContent img{
+        width: 100%;
+        margin: 0;
+    }
+    #title small{
+        top: 60%;
+    }
+}

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/chosen-js/chosen.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/about_us.css">
+</head>
+<body>
+<header>
+
+    <nav>
+        <div id="logo">
+            <!--   Link for main page only for big screens     -->
+            <a href="../index.html" id="logoLink"><img src="../css/media/home/beer_store_logo.png" alt="logo"></a>
+            <!--    Button to open menu for mobile devices    -->
+            <button id="logoBtn" class="navbar-toggler"
+                    type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                    aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <img src="../css/media/home/beer_store_logo.png" alt="logo">
+            </button>
+        </div>
+        <ul class="cl-effect-15">
+            <li><a href="our_beers.html" data-hover="Our Beers">Our Beers</a></li>
+            <li><a href="stores.html" data-hover="Store Locator">Store Locator</a></li>
+            <li><a href="#" data-hover="For beer Lovers">For beer Lovers</a></li>
+            <li><a href="#" data-hover="Gift Cards">Gift Cards</a></li>
+            <li><a href="#" data-hover="About us">About us</a></li>
+            <li><a href="#" data-hover="Business Services">Business Services</a></li>
+            <li><a href="#" data-hover="Ownership & Governance">Ownership & Governance</a></li>
+        </ul>
+    </nav>
+
+    <!--mobile nav-->
+    <div id="navbarToggleExternalContent" class="collapse">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="our_beers.html">Our Beers</a></li>
+            <li><a href="stores.html">Store Locator</a></li>
+            <li><a href="#">For beer Lovers</a></li>
+            <li><a href="#">Gift Cards</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Business Services</a></li>
+            <li><a href="#">Ownership & Governance</a></li>
+        </ul>
+    </div>
+</header>
+
+
+<main>
+    <div id="title">
+        <h2 class="text-uppercase font-weight-bolder" id="aboutTitle">About us</h2>
+        <small>We are champions of beer. <br> Our beer experts will take your beerlove to a new level, and our bottle returns program keeps us green.</small>
+    </div>
+
+
+    <div class="accordion" id="navAccord">
+        <div id="headingOne">
+            <h4 class="mb-0 ">
+                <button class="btn btn-link text-uppercase" type="button" data-toggle="collapse" data-target="#aboutUsAcc">About Us</button>
+            </h4>
+        </div>
+        <div id="aboutUsAcc" class="collapse show" data-parent="#navAccord" >
+            <ul>
+                <li><a href="#">Did you know?</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Accessibility</a></li>
+                <li><a href="#">Operational Report</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Ombudsman</a></li>
+                <li><a href="#">The New Beer Store</a></li>
+                <li><a href="#">Upcoming Openings</a></li>
+            </ul>
+        </div>
+
+
+        <div id="headingTwo">
+            <h4 class="mb-0 ">
+                <button class="btn btn-link text-uppercase" type="button" data-toggle="collapse" data-target="#careersAcc">Careers</button>
+            </h4>
+        </div>
+        <div id="careersAcc" class="collapse" data-parent="#navAccord">
+            <ul>
+                <li><a href="#">Working at the Beer Store</a></li>
+                <li><a href="#">Retail Positions</a></li>
+                <li><a href="#">Distribution Centre Positions</a></li>
+                <li><a href="#">Corporate Positions</a></li>
+            </ul>
+        </div>
+
+        <div id="headingThree">
+            <h4 class="mb-0 ">
+                <button class=" btn btn-link text-uppercase" type="button" data-toggle="collapse" data-target="#enviAcc">Environmental Leadership</button>
+            </h4>
+        </div>
+        <div id="enviAcc" class="collapse" data-parent="#navAccord">
+            <ul>
+                <li><a href="#">Responsibility Programs</a></li>
+                <li><a href="#">Alcohol Retailing Deregulation</a></li>
+            </ul>
+        </div>
+
+        <div id="headingFour">
+            <h4 class="mb-0">
+                <button class=" btn btn-link text-uppercase" type="button" data-toggle="collapse" data-target="#comAcc">Community Involvement</button>
+            </h4>
+        </div>
+
+        <div id="comAcc" class="collapse" data-parent="#navAccord">
+            <ul>
+                <li><a href="#">Community Programs</a></li>
+                <li><a href="#">Disability Community Involvement</a></li>
+                <li><a href="#">Organizing a Bottle Drive</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="content">
+        <div class="card" style="max-width: 600px;display: inline-block">
+            <div class="row no-gutters">
+                <div class="col-md-7">
+                    <img src="../css/media/about_us/employee.jpg" alt="employee">
+                </div>
+                <div class="col-md-5">
+                    <div class="card-body">
+                        <h5 class="card-title">Working at the Beer Store</h5>
+                        <p class="card-text">
+                            If you're passionate and love a fast paced environment, then working at the Beer Store is for you!
+                        </p>
+                        <a href="http://www.thebeerstore.ca/about-us/careers" target="_blank" class="card-link">
+                            Joining the Beer Store team
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="card" style="max-width: 600px;display: inline-block">
+            <div class="row no-gutters">
+                <div class="col-md-7">
+                    <img src="../css/media/about_us/img2.jpg" alt="exchange">
+                </div>
+                <div class="col-md-5">
+                    <div class="card-body">
+                        <h5 class="card-title">Green before Green was cool</h5>
+                        <p class="card-text">
+                            We're very proud pf our award-winning beer container return system!
+                        </p>
+                        <a href="http://www.thebeerstore.ca/about-us/environmental-leadership/bag-it-back-odrp" target="_blank" class="card-link">
+                            The Ontario Deposit Returns Program
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contentMain">
+        <div id="textContent">
+            <h1 class="text-uppercase">time-tested, beer-lover approved</h1>
+            <p>
+                Becoming experts on beer doesn't happen overnight. We've been in business since 1927 and we're owned by 33 Ontario-based brewers. The Beer Store employs 7,000 hard-working Ontarians with well-paying full and part-time jobs.<br>
+                There's no other team of beer experts who live and love all things beer as much as we do. We love beer as much as you — so you know we'll always be dedicated to bringing you your favourite brands from brewers around the world and offer tips on how to enjoy them responsibly.
+            </p>
+            <h2>Facts and Figures</h2>
+            <p>
+                The Beer Store was established in 1927, which means we've been around longer than the Internet. And television. And a lot of other things (probably even you!).<br>
+                Here's something for the number crunchers to chew on: We operate over 450 retail stores, serve 20,723 licensed customers, 650 government-owned LCBO retail locations, 141 retail partners, and 71 Northern Agents. As a customer, you can choose from more than 800 beer brands, in over 450 retail stores, from 200 brewers around the world.
+            </p>
+            <h2>Enfironmental Responsibility</h2>
+            <img src="../css/media/about_us/background-title.jpg" alt="shop">
+            <p>
+                <br>
+                In April of 2014, the Two Billionth liquor container was returned to the Beer Store under the Bag It Back program — the highly successful deposit return program for wine, spirit and beer containers sold through LCBO and Ontario winery stores.<br>
+                Since we've been in business, we've kept approximately 70 billion beer bottles from ending up in Ontario landfill sites. If you were to stretch all those bottles out, it would be about 25 trips to the moon and back.
+                <br>
+
+            </p>
+            <a href="http://www.thebeerstore.ca/about-us/environmental-leadership"> Read more about our Environmental Programs</a>
+            <h2>Corporate Social Responsibility</h2>
+            <p>
+                We take corporate social responsibility seriously, and make sure that every beer we sell is a responsible sale — whether it's through our WeID 25 program or refusing to sell to intoxicated customers. In 2015, we refused service to almost 50,000 individuals at our retail locations.<br>
+                We let brewers decide where they want to sell their product! Brewers can be in one store, 50 stores or all 450 locations of the Beer Store — it's completely up to them.
+            </p>
+            <a href="http://www.thebeerstore.ca/about-us/social-responsibility">Read more about our Social Responsibility Programs</a>
+        </div>
+
+        <div id="news">
+            <h2>In The News</h2>
+            <hr>
+            <small>July 6, 2016</small>
+            <br>
+            <a href="#">Beer Xpress - A Faster Way to Get Your Beer is Here!</a>
+            <hr>
+            <small>December 11, 2014</small>
+            <br>
+            <a href="#">World Champion Glenn Howard joins Police Chief in holiday Beer Store TV spot!</a>
+            <hr>
+            <a href="#"><h3>More News</h3></a>
+        </div>
+    </div>
+    
+</main>
+
+<footer>
+    <div class="links">
+        <div class="each">
+            <ul>
+                <li><a href="our_beers.html">Our Beers</a></li>
+                <li><a href="stores.html">Store Locator</a></li>
+                <li><a href="#">For Beer Lovers</a></li>
+                <li><a href="#">Gift Cards</a></li>
+            </ul>
+        </div>
+        <div class="each">
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#" target="_blank">Accessibility</a></li>
+                <li><a href="#" target="_blank">Business Services</a></li>
+                <li><a href="#" target="_blank">Contact Us</a></li>
+                <li><a href="#" target="_blank">Careers</a></li>
+                <li><a href="#" target="_blank">Employees Only</a></li>
+                <li><a href="#" target="_blank">Employee Training</a></li>
+            </ul>
+        </div>
+        <div class="each">
+            <ul>
+                <li><a href="#" target="_blank">Privacy Policy</a></li>
+                <li><a href="#" target="_blank">Terms & Conditions</a></li>
+                <li><a href="#" target="_blank">Site Map</a></li>
+                <li><a href="#" target="_blank">Advertise With Us</a></li>
+                <li><a href="#" target="_blank">Ownership Information</a></li>
+                <li><a href="mailto:slemishka123@gmail.com">Email of the creator</a></li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <div class="followUs">
+        <h4 class="text-uppercase font-weight-bolder">Follow Us</h4>
+        <ul class="list-inline">
+            <li class="list-inline-item" style="background-color: #08307b">
+                <a target="_blank"
+                   href="https://www.facebook.com/TheBeerStoreON/?utm_source=website&utm_medium=footer">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </li>
+            <li class="list-inline-item" style="background-color: #0e94ca">
+                <a target="_blank"
+                   href="https://twitter.com/thebeerstoreON?utm_source=website&utm_medium=footer">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            <li class="list-inline-item" style="background-color: #b52e2e">
+                <a target="_blank"
+                   href="https://www.instagram.com/thebeerstoreon/?utm_source=website&utm_medium=footer">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <hr>
+    <div class="copyright">
+        <a target="_blank" href="http://www.arrivealive.org">
+            <img src="../css/media/home/arriveAlive.png" alt="arrive">
+        </a>
+        <a target="_blank" href="http://www.bbnontario.ca/">
+            <img src="../css/media/home/bestBarNone.png" alt="bestBar">
+        </a>
+        <a target="_blank"
+           href="http://www.thebeerstore.ca/about-us/community-involvement/disability-community-involvement">
+            <img src="../css/media/home/logo-essential-accessibility.png" alt="access">
+        </a>
+        <a target="_blank" href="https://www.instagram.com/soadfansl/">
+            <img src="../css/media/home/me.jpg" alt="creator" id="creator">
+        </a>
+    </div>
+</footer>
+
+<script src="https://www.powr.io/powr.js?platform=html"></script>
+<script src="../node_modules/jquery/dist/jquery.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="../node_modules/chosen-js/chosen.jquery.min.js"></script>
+<script src="../js/other.js"></script>
+</body>
+</html>

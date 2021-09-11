@@ -1,0 +1,180 @@
+
+@media only screen and (max-width: 600px) {
+    .fullscreen-bg{
+        display: none;
+    }
+    header{
+        height: 100%;
+    }
+    nav{
+        display: none;
+    }
+
+    header{
+        background-color: black;
+    }
+    #logo{
+        margin: auto;
+    }
+
+    #beerStore{
+        height: 100%;
+    }
+    #content{
+        width: 100%;
+        float: none;
+        margin-right: 0;
+        border-radius: 0;
+    }
+    .each{
+        display: block;
+        margin: 0;
+        border-top: white 2px solid;
+    }
+    .each ul{
+        text-align: center;
+        font-size: 2em;
+    }
+    #slideShow{
+        width: 100%;
+    }
+    #beerType{
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    #skipForm input{
+        display: block;
+        margin: auto;
+    }
+    #advancedDiv{
+        width: 100%;
+    }
+    #bStyle, #bAttr{
+        width: 60%;
+        display: block;
+        margin: auto;
+    }
+    #cntryLabel,#brewerLabel{
+        display: block;
+    }
+
+
+    #skip h1{
+        font-size: 3em;
+    }
+
+/*navbar*/
+    #navbarToggleExternalContent ul{
+        list-style: none;
+        font-size: larger;
+        text-align: center;
+        padding: 0;
+    }
+    #navbarToggleExternalContent li{
+        margin-bottom: 10px;
+    }
+    #navbarToggleExternalContent li a{
+        color: white;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) and (min-width: 600px){
+    .fullscreen-bg{
+        display: none;
+    }
+    header{
+        height: 100%;
+    }
+    nav{
+        display: none;
+    }
+
+    header{
+        background-color: black;
+    }
+    #logo{
+        margin: auto;
+    }
+
+    #beerStore{
+        height: 100%;
+    }
+    #content{
+        width: 100%;
+        float: none;
+        margin-right: 0;
+        border-radius: 0;
+    }
+    .each{
+        display: block;
+        margin: 0;
+        border-top: white 2px solid;
+    }
+    .each ul{
+        text-align: center;
+        font-size: 3em;
+    }
+    #slideShow{
+        width: 100%;
+    }
+
+    #beerType{
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    #skipForm input{
+        display: block;
+        margin: auto;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+
+    #content{
+        margin: auto;
+        float:none;
+    }
+    #beerStore{
+        height: 600px;
+    }
+
+    #scrollLink{
+        display: none;
+    }
+    .each{
+        margin: 0;
+        margin-top: 20px;
+    }
+}
+@media only screen and (max-width: 1160px) and (min-width: 992px){
+    nav li{
+        font-size: 19px;
+    }
+    .each{
+        margin: 0;
+        margin-top: 20px;
+    }
+    #beerStore{
+        height: 650px;
+    }
+    .card-group .card-title{
+        font-size: 1.5em;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1430px) and (min-width: 1160px){
+
+    nav li{
+        font-size: 25px;
+    }
+    #beerStore{
+        height: 800px;
+    }
+    .card-group .card-title{
+        font-size: 2em;
+    }
+}

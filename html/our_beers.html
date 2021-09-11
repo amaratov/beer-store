@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Beers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/chosen-js/chosen.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/our_beers.css">
+</head>
+<body>
+<header>
+
+    <nav>
+        <div id="logo">
+            <!--   Link for main page only for big screens     -->
+            <a href="../index.html" id="logoLink"><img src="../css/media/home/beer_store_logo.png" alt="logo"></a>
+            <!--    Button to open menu for mobile devices    -->
+            <button id="logoBtn" class="navbar-toggler"
+                    type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                    aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <img src="../css/media/home/beer_store_logo.png" alt="logo">
+            </button>
+        </div>
+        <ul class="cl-effect-15">
+            <li><a href="#" data-hover="Our Beers">Our Beers</a></li>
+            <li><a href="stores.html" data-hover="Store Locator">Store Locator</a></li>
+            <li><a href="#" data-hover="For beer Lovers">For beer Lovers</a></li>
+            <li><a href="#" data-hover="Gift Cards">Gift Cards</a></li>
+            <li><a href="#" data-hover="About us">About us</a></li>
+            <li><a href="#" data-hover="Business Services">Business Services</a></li>
+            <li><a href="#" data-hover="Ownership & Governance">Ownership & Governance</a></li>
+        </ul>
+    </nav>
+
+    <!--mobile nav-->
+    <div id="navbarToggleExternalContent" class="collapse">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">Our Beers</a></li>
+            <li><a href="stores.html">Store Locator</a></li>
+            <li><a href="#">For beer Lovers</a></li>
+            <li><a href="#">Gift Cards</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Business Services</a></li>
+            <li><a href="#">Ownership & Governance</a></li>
+        </ul>
+    </div>
+</header>
+
+<div id="title">
+    <h2 class="text-uppercase font-weight-bolder" id="aboutTitle">Find your beer:</h2>
+</div>
+<main>
+    <div id="content">
+        <div class="card">
+            <img src="../css/media/our_beers/beer.jpg" alt="beer" class="card-img">
+            <div class="card-img-overlay">
+                <h2 class="card-title text-uppercase  font-weight-bolder">Top Ten</h2>
+                <a href="http://www.thebeerstore.ca/beers/big-10-brands"
+                   target="_blank"
+                   class="card-link ">
+                    See our top ten
+                </a>
+            </div>
+        </div>
+
+        <div class="card" id="middleCard">
+            <div class="card-body">
+                <h2 class="card-title text-uppercase  font-weight-bolder">
+                    What's on sale?
+                </h2>
+                <a href="http://www.thebeerstore.ca/beers/sale"
+                   target="_blank"
+                   class="card-link ">
+                    See our top ten
+                </a>
+            </div>
+        </div>
+        
+        <div class="card text-white" id="lastCard">
+            <img src="../css/media/our_beers/kegs.jpg" alt="kegs" class="card-img" style="height: 300px;">
+            <div class="card-img-overlay">
+                <h2 class="card-title text-uppercase font-weight-bolder">kegs</h2>
+                <a href="http://www.thebeerstore.ca/beers/search/container_options--Kegs"
+                   target="_blank" class="card-link">
+                    See what kegs are available
+                </a><br>
+                <button class="btn btn-warning">
+                    <a href="http://www.thebeerstore.ca/beers/kegs-home-draught/ordering-information">
+                        How to order a keg
+                    </a>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="links">
+        <div id="skipForm">
+            <form action="#">
+                <label for="beerType" style="font-size: 35px">Find your beer: </label>
+                <select name="type" id="beerType" style="height: 50px;width: 200px;">
+                    <option value="All" selected>Select a Type...</option>
+                    <optgroup label="Beer Type">
+                        <option>Beer Type</option>
+                        <option>Ale</option>
+                        <option>Lager</option>
+                        <option>Malt</option>
+                    </optgroup>
+                    <optgroup label="Category">
+                        <option>Domestic Specialty</option>
+                        <option>Import</option>
+                        <option>Non-Alcoholic Beer</option>
+                        <option>Ontario Craft</option>
+                        <option>Premium</option>
+                        <option>Value</option>
+                    </optgroup>
+
+                </select>
+                <input type="text" placeholder="Enter Brand Name..." style="height:50px;width:200px;border-radius:5px">
+                <button class="btn btn-dark btn-lg">FIND</button>
+            </form>
+            <div class="advanced">
+                <button class="btn btn-link" id="showAdv">Advanced search >></button>
+                <div id="advancedDiv">
+                    <form action="#" id="advancedForm">
+                        <h3>Select additional search filters from the options below:</h3>
+                        <hr>
+                        <label for="bStyle"><a href="http://www.thebeerstore.ca/beer-101/beer-types" target="_blank"
+                                               id="beerStyleLink">Beer Style:</a></label>
+                        <select name="beerStyle" id="bStyle" multiple class="chosen-select">
+                            <option>Amber</option>
+                            <option>Blonde</option>
+                            <option>Brown</option>
+                            <option>Cream</option>
+                            <option>Dark</option>
+                            <option>Fruit</option>
+                            <option>Golden</option>
+                            <option>Honey</option>
+                            <option>India Pale Ale</option>
+                            <option>Lime</option>
+                            <option>Pale</option>
+                            <option>Pilsner</option>
+                            <option>Red</option>
+                            <option>Strong</option>
+                            <option>Wheat</option>
+                        </select>
+                        <hr>
+                        <label for="bAttr">Attributes:</label>
+                        <select name="attr" id="bAttr" multiple class="chosen-select">
+                            <option>ON SALE</option>
+                            <option>New</option>
+                            <option>Kegs</option>
+                            <option>Single cans/bottles</option>
+                            <option>Light</option>
+                            <option>Gluten Free</option>
+                            <option>Low Calorie</option>
+                            <option>Mixed Pack</option>
+                            <option>Seasonal</option>
+                            <option>Low Carb</option>
+                        </select>
+                        <hr>
+                        <label for="cntry" id="cntryLabel">Country:</label>
+                        <select name="country" id="cntry" class="chosen-select">
+                            <option selected >All Countries</option>
+                            <option>Canada</option>
+                            <option>USA</option>
+                            <option>Ukraine</option>
+                        </select>
+                        <label for="brewer" id="brewerLabel">Brewer:</label>
+                        <select name="brewer" id="brewer">
+                            <option selected>All Brewers</option>
+                            <option>Bud</option>
+                            <option>5 Paddles</option>
+                            <option>Opilla</option>
+                        </select>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="new">
+        <p>
+            <h2 class="text-uppercase">New Products</h2>
+            New brewers, brands and package sizes are arriving every week.
+            <a href="#">Check out what's new</a>
+        </p>
+    </div>
+</main>
+
+
+<footer>
+    <div class="links">
+        <div class="each">
+            <ul>
+                <li><a href="#">Our Beers</a></li>
+                <li><a href="stores.html">Store Locator</a></li>
+                <li><a href="#">For Beer Lovers</a></li>
+                <li><a href="#">Gift Cards</a></li>
+            </ul>
+        </div>
+        <div class="each">
+            <ul>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="#" target="_blank">Accessibility</a></li>
+                <li><a href="#" target="_blank">Business Services</a></li>
+                <li><a href="#" target="_blank">Contact Us</a></li>
+                <li><a href="#" target="_blank">Careers</a></li>
+                <li><a href="#" target="_blank">Employees Only</a></li>
+                <li><a href="#" target="_blank">Employee Training</a></li>
+            </ul>
+        </div>
+        <div class="each">
+            <ul>
+                <li><a href="#" target="_blank">Privacy Policy</a></li>
+                <li><a href="#" target="_blank">Terms & Conditions</a></li>
+                <li><a href="#" target="_blank">Site Map</a></li>
+                <li><a href="#" target="_blank">Advertise With Us</a></li>
+                <li><a href="#" target="_blank">Ownership Information</a></li>
+                <li><a href="mailto:slemishka123@gmail.com">Email of the creator</a></li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <div class="followUs">
+        <h4 class="text-uppercase font-weight-bolder">Follow Us</h4>
+        <ul class="list-inline">
+            <li class="list-inline-item" style="background-color: #08307b">
+                <a target="_blank"
+                   href="https://www.facebook.com/TheBeerStoreON/?utm_source=website&utm_medium=footer">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </li>
+            <li class="list-inline-item" style="background-color: #0e94ca">
+                <a target="_blank"
+                   href="https://twitter.com/thebeerstoreON?utm_source=website&utm_medium=footer">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            <li class="list-inline-item" style="background-color: #b52e2e">
+                <a target="_blank"
+                   href="https://www.instagram.com/thebeerstoreon/?utm_source=website&utm_medium=footer">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <hr>
+    <div class="copyright">
+        <a target="_blank" href="http://www.arrivealive.org">
+            <img src="../css/media/home/arriveAlive.png" alt="arrive">
+        </a>
+        <a target="_blank" href="http://www.bbnontario.ca/">
+            <img src="../css/media/home/bestBarNone.png" alt="bestBar">
+        </a>
+        <a target="_blank"
+           href="http://www.thebeerstore.ca/about-us/community-involvement/disability-community-involvement">
+            <img src="../css/media/home/logo-essential-accessibility.png" alt="access">
+        </a>
+        <a target="_blank" href="https://www.instagram.com/soadfansl/">
+            <img src="../css/media/home/me.jpg" alt="creator" id="creator">
+        </a>
+    </div>
+</footer>
+
+<script src="https://www.powr.io/powr.js?platform=html"></script>
+<script src="../node_modules/jquery/dist/jquery.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="../node_modules/chosen-js/chosen.jquery.min.js"></script>
+<script src="../js/other.js"></script>
+</body>
+</html>

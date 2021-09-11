@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Vast+Shadow');
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    background-color: #b9b9b9;
+    font-family: 'Slabo 27px', serif;
+}
+
+/*Header*/
+header {
+    background-color: black;
+    height: 135px;
+}
+/*Logo*/
+#logo{
+    margin:0 20px 0 20px;;
+    width: 150px;
+    overflow: hidden;
+    border-radius: 20px;
+    float: left;
+}
+#logoLink img{
+    transform: translateX(2px);
+    transition: transform .7s ease;
+    width: 300px;
+}
+#logoLink img:hover{
+    transform: translateX(-150px);
+}
+#logoBtn img{
+    transform: translateX(-12px);
+    transition: transform .7s ease;
+    width: 300px;
+}
+#logoBtn img:hover{
+    transform: translateX(-166px);
+}
+/*nav*/
+nav {
+
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 40px;
+    text-align: center;
+}
+nav li{
+    display: inline-block;
+    margin: 10px;
+    font-size: 20px;
+}
+/*effect 15 for links*/
+.cl-effect-15 a {
+    color: rgba(191, 126, 16, 0.71);
+    font-weight: 700;
+    text-shadow: none;
+    text-decoration: none;
+}
+.cl-effect-15 a::before {
+    color: #fff;
+    content: attr(data-hover);
+    position: absolute;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+}
+.cl-effect-15 a:hover::before,
+.cl-effect-15 a:focus::before {
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    transform: scale(0.9);
+    opacity: 0;
+}
+/*HeaderEnd*/
+
+/*Footer*/
+footer{
+    text-align: center;
+    background-color: black;
+    color:white;
+}
+hr{
+    border-color: white;
+    width: 80%;
+}
+/*First section*/
+.each{
+    display: inline-flex;
+    margin:20px 100px;
+}
+.each ul{
+    list-style: none;
+    text-align: left;
+    padding: 0;
+}
+.each a{
+    color: white;
+}
+.each a:hover{
+    text-decoration: none;
+    color: grey;
+}
+
+/*Second section*/
+footer .list-inline-item{
+    border-radius: 30px;
+    color:white;
+    width: 40px;
+    font-size: 27px;
+    margin:0 40px;
+}
+.followUs a{
+    color: white;
+}
+.followUs a:hover{
+    color:gray;
+}
+
+/*Third*/
+#creator{
+    width: 55px;
+    height: 55px;
+    border-radius: 30px;
+}
+
+.copyright a{
+    margin: 10px;
+}
+/*FooterEnd*/
+
+/*Media Query*/
+@media only screen and (max-width: 1150px) and (min-width: 600px){
+    header{
+        height: 100%;
+    }
+    #logo{
+        float: none;
+        margin: auto;
+    }
+    .each{
+        margin:0;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    #logo{
+        float:none;
+        margin: auto;
+    }
+
+    #navbarToggleExternalContent ul{
+        list-style: none;
+        text-align: center;
+        padding: 0;
+    }
+
+    #navbarToggleExternalContent li a{
+        color: white;
+        font-size: 1.5em;
+
+    }
+    #navbarToggleExternalContent li{
+        margin-top: 10px;
+    }
+
+    header{
+        height: 100%;
+    }
+    .navbar-toggler-icon{
+        display: none;
+    }
+    .cl-effect-15{
+        display: none;
+    }
+    .each{
+        display: block;
+        margin: 0;
+        border-top: white 2px solid;
+    }
+    .each ul{
+        text-align: center;
+        font-size: 2em;
+    }
+}

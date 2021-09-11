@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css?family=Vast+Shadow');
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    background-color: #b9b9b9;
+    font-family: 'Slabo 27px', serif;
+}
+
+/*Header*/
+header{
+    height: 700px;
+}
+/*Logo*/
+#logo{
+    margin:20px;
+    width: 150px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+#logo img{
+    transform: translateX(2px);
+    transition: transform .7s ease;
+    width: 300px;
+}
+#logo img:hover{
+    transform: translateX(-150px);
+}
+/*bg video*/
+.fullscreen-bg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    height: 700px;
+    background-color: black;
+}
+#videoHome{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*HeaderEnd*/
+
+/*Nav*/
+nav{
+    background-color: #b9b9b9;
+    z-index: 100;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+}
+nav li{
+    display: inline-block;
+    margin: 10px;
+    font-size: 30px;
+}
+nav a{
+    color: black;
+}
+nav a:hover{
+    color: rgba(191, 126, 16, 0.71);
+    text-decoration: none;
+}
+nav button{
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    background-color: black;
+    border: none;
+    color: white;
+}
+nav button i{
+    font-size: 30px;
+}
+nav button:hover{
+    color: #3700ff;
+    cursor: s-resize;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+/*NavEnd*/
+
+
+
+/*Article*/
+article{
+    height: 100%;
+}
+#skip{
+    padding-top: 70px;
+    text-align: center;
+    background-image: url("media/home/beer-texture.jpg");
+    background-size: cover;
+    background-position: bottom;
+    padding-bottom: 50px;
+}
+#skip h1 {
+     font-size: 9em;
+ }
+#skip h4 {
+    font-size: 5em;
+}
+#findStore{
+    color:white;
+    font-size: 2em;
+}
+#findStore:hover{
+
+}
+#skipImg:hover{
+    transform: scale(1.1);
+}
+/*form*/
+#beerType{
+    background-color: white;
+}
+#skipForm label,#beerType,#skipForm input,#skipForm button{
+    margin: 20px;
+}
+.advanced button{
+    position: relative;
+    left: 25%;
+    margin: 0;
+    color: white;
+    text-decoration: underline;
+}
+/*advanced form*/
+#advancedDiv{
+    width: 60%;
+    margin: auto;
+    background-color: black;
+    border-radius: 30px;
+    color: white;
+    padding: 30px;
+}
+#bStyle, #bAttr{
+    width: 300px;
+}
+#beerStyleLink{
+    text-decoration: underline;
+    color: #f99e00;
+}
+#cntry, #brewer{
+    background-color: white;
+}
+/*ArticleEnd*/
+
+
+/*Main*/
+main{
+    width: 80%;
+    margin: auto;
+}
+
+/*beerStore*/
+#beerStore{
+    height: 1080px;
+    background-image: url("media/home/beerStore.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#content{
+    width: 40%;
+    float: right;
+    margin-top: 10%;
+    margin-right: 40px;
+    background-color: #060400cc;
+    padding: 40px;
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+}
+#content a{
+    color: orange;
+}
+.card-title{
+    font-size: 3em;
+}
+.card-body a{
+    color: white;
+    text-decoration: underline;
+}
+#slideShow .card-body{
+    background-color: #b9b9b9;
+}
+#slideShow{
+    width: 45%;
+    height: 650px;
+    margin: auto;
+    background-color: #b9b9b9;
+}
+#slideShow a{
+    color: black;
+}
+#slideShow .card{
+    border: none;
+}
+/*MainEnd*/
+
+
+
+/*Footer*/
+footer{
+    text-align: center;
+    background-color: black;
+    color:white;
+}
+hr{
+     border-color: white;
+     width: 80%;
+ }
+/*First section*/
+.each{
+    display: inline-flex;
+    margin:20px 100px;
+}
+.each ul{
+    list-style: none;
+    text-align: left;
+}
+.each a{
+    color: white;
+}
+.each a:hover{
+    text-decoration: none;
+    color: grey;
+}
+
+/*Second section*/
+footer .list-inline-item{
+    border-radius: 30px;
+    color:white;
+    width: 40px;
+    font-size: 27px;
+    margin:0 40px;
+}
+.followUs a{
+     color: white;
+ }
+.followUs a:hover{
+    color:gray;
+}
+
+/*Third*/
+#creator{
+    width: 55px;
+    height: 55px;
+    border-radius: 30px;
+}
+
+.copyright a{
+    margin: 10px;
+}
+/*FooterEnd*/
